@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Makes site responsive on phones/tablets -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Drink Recipe Finder</title>
+
+  <!-- External CSS file link -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Anime.js animation library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+
+  <!-- Main container -->
+  <div class="container">
+
+    <!-- App title -->
+    <h1>🍹 Drink Recipe Finder</h1>
+
+    <!-- Search input + button box -->
+    <div class="search-box">
+      <input 
+        type="text" 
+        id="drinkInput" 
+        placeholder="Enter drink name"
+      >
+
+      <!-- Calls getDrink() when clicked -->
+      <button onclick="getDrink()">Search</button>
+    </div>
+
+    <!-- for hidden result card until data loads -->
+    <div id="card" class="card hidden">
+
+      <!-- for drink image -->
+      <img id="image" alt="Drink image">
+
+      <!-- For drink information -->
+      <h2 id="name"></h2>
+      <p id="category"></p>
+      <p id="ingredients"></p>
+      <p id="instructions"></p>
+
+    </div>
+
+  </div>
+
+  <!-- External JavaScript link-->
+  <script src="script.js"></script>
+
+</body>
+</html>
